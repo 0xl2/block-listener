@@ -136,7 +136,6 @@ websocketProvider.on(filter, (log) => {
   //   console.log(log);
 
   if (log && log.transactionHash && log.blockHash) {
-    console.log("here");
-    checkTx(logData.transactionHash, logData.blockHash);
+    checkTx(log.transactionHash, log.blockHash);
   }
 });
