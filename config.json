@@ -1,5 +1,6 @@
 {
     "rpc_url": "https://rpc.ankr.com/eth",
+    "rpc_socket": "wss://mainnet.infura.io/ws/v3/",
     "poolAddr": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
     "swap_event": "0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822"
 }
