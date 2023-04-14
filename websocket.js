@@ -1,7 +1,7 @@
 const { ethers } = require("ethers");
 const colors = require("colors");
 
-require('dotenv').config();
+require("dotenv").config();
 
 const config = require("./config.json");
 
@@ -133,13 +133,10 @@ const checkTx = async (txHash, blockHash) => {
 };
 
 websocketProvider.on(filter, (log) => {
-  console.log(log);
+  //   console.log(log);
 
-  //   console.log(logData, log);
-
-    if (logData && logData.transactionHash && logData.blockHash) {
-        console.log('here')
-        checkTx(logData.transactionHash, logData.blockHash);  
+  if (log && log.transactionHash && log.blockHash) {
+    console.log("here");
+    checkTx(logData.transactionHash, logData.blockHash);
   }
-    
 });
